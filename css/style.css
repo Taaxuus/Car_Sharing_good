@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--white-color: #fff;
+	--red-color: rgb(255, 0, 0);
+	--black-color: #000;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+}
+
+.container {
+	width: 1088px;
+	margin: 0px auto;
+}
+
+.header {
+	position: relative;
+	height: 807px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/Image.png);
+	background-size: cover;
+	/* background-position: top; */
+}
+
+/* header nav  */
+
+.header__nav {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 8px 8px 60px -18px rgba(53, 53, 62, 1);
+	height: 90px;
+}
+
+.header__nav .container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* logo box  */
+
+.header__logo-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+}
+
+.logo-text {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--red-color);
+	font-size: 3.5rem;
+}
+
+.logo-text span {
+	color: var(--white-color);
+}
+
+/* nav box  */
+
+.header__nav-box {
+	display: flex;
+	gap: 60px;
+}
+
+.header__nav-box li {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.3s;
+}
+
+.header__nav-box li:hover {
+	background-color: rgba(202, 202, 202, 0.4);
+}
+
+.header__nav-item {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--white-color);
+	padding: 12px;
+}
+
+/* Header content  */
+
+.header_content_container {
+	height: calc(100% - 90px);
+	display: flex;
+	width: 1088px;
+	margin: 0px auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__title {
+	font-size: 9rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 16px;
+	color: var(--white-color);
+}
+
+.header__text {
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding: 6px;
+	color: var(--white-color);
+}
+
+.header_btns {
+	display: flex;
+	gap: 80px;
+	margin-top: 54px;
+}
+
+.header-btn {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 25px 55px;
+	text-decoration: none;
+	border-radius: 40px;
+	box-shadow: 0px 3px 6px #ff00004d;
+	background-color: var(--red-color);
+	color: var(--white-color);
+}
+
+.header-btn2 {
+	background-color: var(--white-color);
+	color: var(--red-color);
+}
+
+.arrow-down {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
