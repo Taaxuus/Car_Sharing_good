@@ -217,8 +217,8 @@ h2::after {
 .blog__card-title {
 	font-size: 1.9rem;
 	font-weight: 400;
-	margin-top: 25px;
-	margin-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 15px;
 	color: var(--grey-color);
 }
 
@@ -227,8 +227,8 @@ h2::after {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	color: var(--grey-color);
-	margin-right: 92px;
-	margin-bottom: 26px;
+	padding-right: 92px;
+	padding-bottom: 26px;
 }
 
 .small-btn {
@@ -272,8 +272,7 @@ h2::after {
 	text-align: center;
 	font-size: 1.9rem;
 	font-weight: 400;
-	margin-top: 25px;
-	margin-bottom: 15px;
+	padding: 15px 0;
 	color: var(--white-color);
 }
 
@@ -282,7 +281,7 @@ h2::after {
 	font-size: 1.4rem;
 	font-weight: 300;
 	color: var(--grey-color);
-	margin-bottom: 15px;
+	padding-bottom: 26px;
 	font-family: 'Open Sans', sans-serif;
 }
 
