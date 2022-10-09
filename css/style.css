@@ -449,7 +449,6 @@ input[type='checkbox'] {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: var(--white-color);
-
 	font-weight: 600;
 	transition: color 0.3s;
 }
