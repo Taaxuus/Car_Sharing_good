@@ -10,6 +10,7 @@
 	--black-color: #000;
 	--grey-color: #6a6a6a;
 	--bg-gray-color: #28272c;
+	--form-input-color: #b2b2b2;
 }
 
 html {
@@ -26,9 +27,10 @@ h2 {
 	align-items: center;
 	justify-content: center;
 	font-size: 3.5rem;
-	text-transform: uppercase;
 	font-weight: 700;
+	text-transform: uppercase;
 	gap: 10px;
+	color: var(--black-color);
 }
 
 h2::before,
@@ -36,16 +38,27 @@ h2::after {
 	content: '';
 	display: block;
 	height: 3px;
-	width: 60px;
+	width: 50px;
 	background-color: var(--red-color);
 	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .container {
 	width: 1088px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
+.btn {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 25px 55px;
+	text-decoration: none;
+	border-radius: 40px;
+	box-shadow: 0px 3px 6px #ff00004d;
+	background-color: var(--red-color);
+	color: var(--white-color);
+}
 .small-btn {
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -155,18 +168,6 @@ h2::after {
 	display: flex;
 	gap: 80px;
 	margin-top: 54px;
-}
-
-.btn {
-	font-size: 1.6rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 25px 55px;
-	text-decoration: none;
-	border-radius: 40px;
-	box-shadow: 0px 3px 6px #ff00004d;
-	background-color: var(--red-color);
-	color: var(--white-color);
 }
 
 .btn--secondary {
@@ -290,4 +291,174 @@ h2::after {
 .contact {
 	padding-top: 65px;
 	padding-bottom: 75px;
+}
+
+.contact__title {
+	padding-bottom: 35px;
+}
+
+.contact__form-box {
+	margin: 0 auto;
+	display: flex;
+	gap: 16px;
+	width: 904px;
+}
+
+.form {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.contact-img {
+	height: 316px;
+	width: 444px;
+}
+.form__checkbox-box {
+	position: relative;
+	gap: 10px;
+	display: flex;
+	cursor: pointer;
+}
+
+button[type='summit'] {
+	align-self: flex-end;
+}
+
+input {
+	height: 38px;
+	border: 1px solid #b2b2b2;
+	border-radius: 8px;
+	padding: 8px 12px;
+	font-size: 1.6rem;
+}
+
+textarea {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.6rem;
+	height: 140px;
+	border: 1px solid #b2b2b2;
+	border-radius: 8px;
+	padding: 8px 12px;
+}
+
+input[type='text']:focus,
+textarea:focus {
+	border: 1px solid var(--red-color);
+	box-shadow: 0px 1px 6px #ff00004d;
+}
+
+input[type='checkbox'] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+	display: none;
+}
+.form__checkbox-box span {
+	flex-shrink: 0;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #b2b2b2;
+	border-radius: 8px;
+}
+.form__checkbox-box input:checked + span {
+	background-image: url(../img/Icon\ Check.svg);
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid var(--red-color);
+}
+
+.checkbox-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	color: var(--form-input-color);
+	padding-bottom: 10px;
+}
+
+.form-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border: none;
+	text-decoration: none;
+	padding: 10px 52px;
+	border: 1px solid var(--red-color);
+	transition: all 0.3s;
+}
+.form-btn a {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: var(--red-color);
+}
+
+.form-btn:hover {
+	transform: scale(1.1);
+}
+
+/* FOOTER  */
+
+.footer {
+	background-color: var(--bg-gray-color);
+	padding: 40px 0;
+}
+
+.footer__logo-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	padding-bottom: 22px;
+}
+.footer__logo-img {
+	height: 17px;
+	width: 20px;
+}
+.footer__logo-text {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--red-color);
+	font-size: 2.5rem;
+}
+.footer__logo-text span {
+	color: var(--white-color);
+}
+
+.footer__nav-container {
+	display: flex;
+	height: 97px;
+	justify-content: space-between;
+}
+
+.footer__nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 7px;
+	column-gap: 140px;
+}
+
+.footer__nav-item {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--white-color);
+
+	font-weight: 600;
+	transition: color 0.3s;
+}
+
+.footer__nav-item:hover {
+	color: var(--red-color);
+}
+
+.copyright {
+	align-self: flex-end;
+	color: var(--grey-color);
 }
